@@ -10,6 +10,10 @@ html{
 body{
     font-size: 1.6rem;
     font-family: v.$fuente_principal;
+
+    &.body-scroll{
+        padding-top: 8.6rem;
+    }
 }
 
 p{

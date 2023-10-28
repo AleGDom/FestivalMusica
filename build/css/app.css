@@ -322,6 +322,9 @@ body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
 }
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -379,6 +382,13 @@ img {
 @media (min-width: 768px) {
   .header h1 {
     margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
 }
 

@@ -17,6 +17,14 @@
         }
     }
 
+    @include m.tablet{
+        &.fijo{
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+    }
+
     
 }
 
@@ -46,6 +54,8 @@
 .navegacion-principal a:last-of-type{
     margin: 0;
 }
+
+
 
 
 

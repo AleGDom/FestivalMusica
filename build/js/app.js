@@ -4,6 +4,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function iniciarApp(){
     crearGaleria();
+    navegacionFija();
+}
+
+function navegacionFija(){
+    const barra = document.querySelector('header');
+    const sobrefestival= document.querySelector('.sobre-festival');
+    const body = document.querySelector('body');
+
+    window.addEventListener('scroll',function(){
+        //console.log(sobrefestival.getBoundingClientRect());
+        if(sobrefestival.getBoundingClientRect().top<0){
+            barra.classList.add('fijo');
+            body.classList.add('body-scroll');
+        } else{
+            barra.classList.remove('fijo');
+            body.classList.remove('body-scroll');
+        }
+    });
+
+
 }
 
 
